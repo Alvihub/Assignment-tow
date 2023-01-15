@@ -1,15 +1,16 @@
-  /*--------------
-       font
-   -------------- */
+                  
+                  /* font */
    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Work+Sans:wght@500&display=swap');
   
       /* common styles and utilitise*/
       body{
         font-family: 'Work Sans', sans-serif;
-        
+        background-color: #ffffff;
     }
 
-      /* banner manubar */
+                        /* -------------------
+                          banner manubar
+                        ---------------------- */
       .nav-title{
         font-weight: 700;
         font-size: 45px;
@@ -31,7 +32,9 @@
         color: #424242;
     }
    
-       /* header banner */
+                      /*---------------------------
+                            header banner
+                      ------------------------------- */
 
     .header{
         background: rgba(255, 144, 14, 0.1);
@@ -67,20 +70,23 @@
         color:#ffffff;
         font-weight: 600;
         font-size: 20px;
-
-        border:0;
+         border:0;
         padding: 21px 25px;
         height: 64px;
         border-radius:5px;
         background: #FF900E;
         margin: 32px 0 50px 0;
-    }
+    } 
+
     .banner-image img{
         width:100%;
+        margin-bottom: 45px;
     }
    
     
-        /* features section */
+                    /* --------------------------
+                           features section 
+                    --------------------------*/
     .feature-article-part{
         display: flex;
         gap: 73px;
@@ -114,7 +120,9 @@
         color: #727272;
         margin-bottom: 32px;
       }
-      /* <!-- features-blog-section --> */
+                         /* <!----------------------
+                             features-blog-section 
+                        --------------------------> */
       .features-full-part{
         display: flex;
         margin: 0 240px 130px;
@@ -137,11 +145,8 @@
         background: #FFFFFF;
         box-shadow: 6px 6px 50px rgba(0, 0, 0, 0.06);
         border-radius: 5px;
-     
         padding: 30px 30px 30px 30px;
-        
-       
-     }
+    }
      .blog-title{
         font-weight: 600;
         font-size: 20px;
@@ -163,17 +168,14 @@
       .experience{
         background: #FF900E;
         border-radius: 8px;
-        
         color: #FFFFFF;
         position: relative;
         text-align: center;
-       padding: 40px 40px;
-       left: -100px;
-       top: -100px;
-       width: 250px;
-       height: 90px;
-       
-
+        padding: 40px 40px;
+        left: -100px;
+        top: -100px;
+        width: 250px;
+        height: 90px;
     }
       .experience-title{ 
         font-weight: 700;
@@ -185,7 +187,9 @@
         font-size: 25px;
         margin: 0;
       }
-           /* fact section */
+                        /*------------------------
+                               fact section
+                        ----------------------------- */
      .fact-header{
         margin-left: 240px;
      }
@@ -196,9 +200,7 @@
         color: #727272;
      }
                 
-  
-
-     .factses{
+      .factses{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         justify-content: space-between;
@@ -207,13 +209,12 @@
         text-align: center;
      }
      .fact:hover{
-        background-color: ghostwhite;
+        background-color: rgb(235, 235, 238);
           }
      .fact{
         border: 1px solid #FF900E;
         padding-top: 45px;  
-    
-       width: 241px;
+        width: 241px;
        height: 241px;
      }
      .fact-number{
@@ -229,7 +230,9 @@
         margin: 0;
      }
 
-           /* sponspors-section */
+                     /* -------------------------
+                            sponspors-section
+                    ---------------------------- */
            .sponspors-header{
             text-align: center;
            }
@@ -239,14 +242,14 @@
             justify-content: space-between;
            }
            .sponspors img{
-            /* (collect from net)       */
-
+                                       /* (collect from net)       */
                 -webkit-filter: grayscale(100%); 
                 filter: grayscale(100%);
-            
-           }
+            }
 
-                     /* footer section */
+                     /* ----------------------
+                           footer section
+                    ----------------------------- */
     .footer{
         margin: 130px 240px 216px;
     }
@@ -261,10 +264,15 @@
 
     }
 
-     /* media query for mobile */
+                          /*-------------------------------
+                                media query for mobile
+                        ------------------------------------ */
 
      @media only screen and (max-width:576px) {
-              /* banner */
+
+                         /*-------------
+                             banner
+                        ----------------- */
            .banner nav{
             flex-direction: column;
             gap: 10px;
@@ -278,12 +286,16 @@
                 margin: 0
               }
               .banner-text{margin: 0;}
-              /* .feature-article-part */
+
+
+                         /* .feature-article-part */
+
               .feature-article-part{
                 margin: 0;
               }
-        /* .features-quick-list */
-        .feature-article-part{
+
+                               /* .features-quick-list */
+            .feature-article-part{
             flex-direction: column;
             margin: 0;
             text-align: center;
@@ -302,7 +314,7 @@
             text-align: center;
         }    
 
-        /* <!-- features-blog-section --> */
+                        /* <!-- features-blog-section --> */
         .features-full-part{
             flex-direction: column;
             margin: 0;
@@ -317,7 +329,7 @@
         padding: 30px 30px 40px;
         margin-left: 25px;
        }
-               /* .fact-container */
+                           /* .fact-container */
     .fact-header{
      margin: 0;
      text-align: center;
@@ -331,7 +343,11 @@
       .fact{
         margin-left: 55px;
       }
-        /* .sponspors-container */
+      .fact:hover{
+        background-color: rgb(235, 235, 238);
+          }
+          
+                            /* .sponspors-container */
         .sponspors{ 
             flex-direction: column;
             margin: 10px 110px;
@@ -339,7 +355,7 @@
       .sponspors img{
         margin-top: 30px;
       }
-         /* fotter */
+                               /* footer */
          .footer{
             margin: 30px 10px;
          }
